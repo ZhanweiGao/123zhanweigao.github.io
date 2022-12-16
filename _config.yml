@@ -1,0 +1,71 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+title: Yichen Wang | 汪逸宸
+description: >- # this means to ignore newlines until "baseurl:"
+  The is Yichen Wang's personal website.
+baseurl: "/yichen" # the subpath of the site
+url: "https://yichenwangs.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile-pic.jpg
+google_analytics: "UA-121636368-3"
+
+header:
+  pages:
+    - name: Home
+      slug: /
+    - name: Work
+    # - name: Blog
+    #   slug: /
+    # - name: Post
+
+footer:
+  show_powered_by: true
+  contact:
+    - name: Email
+      value: yichen.wang@anu.edu.au
+      link: mailto:yichen.wang@anu.edu.au
+    # - name: WeChat
+    #   value: YourWeChatUsername
+    #   link: "#"
+  follow:
+    - name: Twitter
+      link: http://twitter.com/yichenwangs
+      username: "@yichenwangs"
+    - name: Google Scholar
+      link: https://scholar.google.com/citations?hl=en&user=IaBYlMQAAAAJ
+    # - name: LinkedIn
+    #   link: http://linkedin.com/in/YourLinkedInUsername
+    # - name: GitHub
+    #   link: http://github.com/YourGitHubUsername
+    # - name: Dribbble
+    #   link: https://dribbble.com/YourDribbbleUsername
+    # - name: RSS
+    #   link: /feed.xml
+
+# Build settings
+markdown: kramdown
+kramdown:
+  # Enable GitHub Flavored Markdown (fenced code blocks)
+  input: GFM
+  # Disable auto-generated ID's for headings
+  auto_ids: false
+sass:
+    style: compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1
